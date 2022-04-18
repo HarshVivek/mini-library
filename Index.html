@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Club</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navigation-bar">
+        <div class="page-title">
+            Book club
+        </div>
+
+        <div class="logged-in-user-input">
+            <form class="login" id="login">
+                <input class="control" type="text" placeholder="Login">
+                <button class="btn" id="botton" type="submit">Login</button>
+            </form>
+        </div>
+    </nav>
+
+    <section class="content-section">
+        <p id="logged-in-user-name">
+            
+        </p>
+        <table class="book-table" id="info-table">
+            <thead id="info-head">
+            <tr>
+                <th>
+                    Id
+                </th>
+                <th>
+                    Title
+                </th>
+                <th>
+                    Author
+                </th>
+                <th>
+                    Lender
+                </th>
+                <th>
+                    Borrower
+                </th>
+                <th>
+                    Action
+                </th>
+            </tr>
+        </thead>
+
+        <tbody id="tbody">
+
+        </tbody>
+ 
+            <tfoot id="addbook" >
+                <tr>
+                    <form id='addbookform'>
+                        <td></td>
+                        <td><input type="text" id="BookName" name="BookName" placeholder="title"></td>
+                        <td><input type="text" id="lname" name="lname" placeholder="author"></td>
+                        <td></td>
+                        <td></td>
+                        <td><input type="submit" value="Add Book"></td>
+                    </form>
+                </tr>
+            </tfoot>
+        </table>
+
+    </section>
+
+    <script type="text/javascript" src="library.js"></script>
+</body>
+
+</html>
